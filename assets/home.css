@@ -1,0 +1,147 @@
+* {
+  margin:0;
+  Padding:0;
+  Box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=900&t=st=1680934498~exp=1680935098~hmac=6262f6743c87f57cc80cec0c90eca981b8844e4c59f4f1ccb2df9967dc42ed72);
+  background-position: center;
+  background-size: cover; 
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.container .box {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  color: aliceblue;
+  background:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  transition: 0.5s;
+  border-radius: 5px;
+
+}
+
+.container .box:hover{
+  transform: translateY(-20px);
+}
+
+.container .box::before{
+  content: '';
+  position: absolute;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg, #4c00ff, #ff0058);
+  border-radius: 5px;
+}
+
+.container .box::after{
+  content: '';
+  position: absolute;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #4c00ff, #ff0058);
+  filter: blur(30px);
+}
+
+.container .box span{
+  position: absolute;
+  top:6px;
+  left:6px;
+  right:6px;
+  bottom:6px;
+  background: rgba(0,0,0,0.6);
+  z-index: 2;
+  
+}
+
+.container .box .content{
+  position: relative;
+  z-index: 10;
+  padding: 20px, 40px;
+}
+
+.container .box .content h2{
+font-size: 2em;
+color: #fff;
+margin-bottom: 10px;
+padding: 20px;
+}
+
+.container .box .content p{
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+  padding: 20px;
+  }
+
+  .container .box .content ul{
+    
+    margin: 5px;;
+    Padding: 5px;
+    border:5px ;
+  }
+
+
+  /*.container .box .content input{
+    font-size: 1em;
+    color: #050505;
+    margin: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    padding: 5px;
+    --- may need later
+    }*/
+
+ 
+  
+
+    .container .box .content button {
+      background-color: #4bf06c;
+      width: 30%;
+      margin: 20px;;
+      Padding:10px;
+      border:20px ;
+      border-radius: 5%;
+}
+.container .box .content button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width: 1024px) {
+
+}
