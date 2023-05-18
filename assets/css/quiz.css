@@ -13,28 +13,28 @@
     background-image: url(https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=900&t=st=1680934498~exp=1680935098~hmac=6262f6743c87f57cc80cec0c90eca981b8844e4c59f4f1ccb2df9967dc42ed72);
     background-position: center;
     background-size: cover; 
-  }
+  } 
+
   .timer-container{
     position: relative;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 40px 0;
+    padding: 10px;
+    width: 50%;
+    font-size: 2rem;
+    display: flex;
     flex-wrap: wrap;
+    border-radius: 5px;
+    color:aquamarine
 
   }
 
-  .timer-container p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    size: 40px;
-  }
+  
   .quiz-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px;
     flex-wrap: wrap;
   }
   
@@ -50,6 +50,7 @@
     margin: 20px 30px;
     transition: 0.5s;
     border-radius: 5px;
+   
   
   }
   
@@ -93,14 +94,16 @@
   .quiz-container .box .content{
     position: relative;
     z-index: 10;
-    padding: 40px, 40px;
+    padding: 30px, 30px;
+    
   }
   
   .quiz-container .box .content h2{
   font-size: 2em;
   color: #fff;
-  margin-bottom: 10px;
-  padding: 20px;
+  margin: 10px;
+  margin-left: 60px ;
+  padding: 10px;
   }
   
   .quiz-container .box .content p{
@@ -109,22 +112,26 @@
     margin-bottom: 10px;
     line-height: 1.4em;
     padding: 10px;
-   
+   justify-content: center;
+    align-items: center;
     }
   
     .quiz-container .box .content ul{
       margin: 10px;;
       Padding: 5px;
       border:5px ;
+      
     }
   
     .quiz-container .box .content button {
     background-color: #4bf06c;
     width: 30%;
-    margin: 30px;;
+    margin: 20px;
+    margin-left: 40px;
     Padding:10px;
-    border:20px ;
+    border:40px ;
     border-radius: 5%;
+    
     
 
     }
